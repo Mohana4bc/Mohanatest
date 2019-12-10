@@ -1,0 +1,17 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="com.axium.Axium.controller.Login"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<App id="idAppControl">
+		<pages>
+			<Page title="Axium Connected Warehouse">
+				<content>
+					<VBox alignContent="Center" alignItems="Center" height="100%" width="100%" justifyContent="Center">
+						<Image width="219px" height="40px" src="images/Axium-Plastics.jpg"></Image>
+						<Input placeholder="Username"></Input>
+						<Input placeholder="Password"></Input>
+						<Button text="Login" type="Emphasized" press="onSubmit"></Button>
+					</VBox>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

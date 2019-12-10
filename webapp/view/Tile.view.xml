@@ -1,0 +1,49 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="com.axium.Axium.controller.Tile"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<App id="idAppControl">
+		<pages>
+			<Page title="Axium Connected Warehouse">
+				<customHeader>
+					<Bar>
+						<contentRight>
+							<Button icon="sap-icon://log" press="onPressLog"/>
+						</contentRight>
+						<contentMiddle>
+							<Title text="Axium Connected Warehouse"></Title>
+						</contentMiddle>
+						<contentLeft>
+							<Button icon="sap-icon://nav-back" press="onPressBack"/>
+						</contentLeft>
+					</Bar>
+				</customHeader>
+				<!--backgroundImage="images/bg.png"-->
+				<content>
+					<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" headerImage="sap-icon://cart-3" header="INBOUND"
+						press="onInboundPress">
+						<TileContent></TileContent>
+					</GenericTile>
+					<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" headerImage="sap-icon://cart-approval" header="OUTBOUND"
+						press="onOutboundPress">
+						<TileContent></TileContent>
+					</GenericTile>
+					<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" headerImage="sap-icon://complete" header="STOCK TRANSFER"
+						press="onStocktransferPress">
+						<TileContent></TileContent>
+					</GenericTile>
+					<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" headerImage="sap-icon://inbox" header="WAREHOUSE INTERNAL"
+						press="onWarehouseinternalPress">
+						<TileContent></TileContent>
+					</GenericTile>
+					<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" headerImage="sap-icon://menu2" header="STOCK OVERVIEW"
+						press="onStockoverviewPress">
+						<TileContent></TileContent>
+					</GenericTile>
+					<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" headerImage="sap-icon://product" header="PHYSICAL INVENTORY"
+						press="onPhysicalinventoryPress">
+						<TileContent></TileContent>
+					</GenericTile>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
